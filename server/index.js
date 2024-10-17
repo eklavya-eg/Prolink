@@ -34,7 +34,7 @@ const server = app.listen(port, () => {
 });
 
 
-const DATABASE_URL = process.env.DB_URL
-const DATABASE = process.env.DB
+const DATABASE_URL = process.env.DB_URL || "mongodb+srv://eklavya:cnMmBVvs5nQaJ4UU@cluster0.rt4zx.mongodb.net/"
+const DATABASE = process.env.DB || "Prolink"
 
 db(DATABASE_URL, DATABASE);
